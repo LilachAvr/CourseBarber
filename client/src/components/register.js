@@ -7,7 +7,8 @@ class Register extends Component {
         phone: '',
         email: '',
         message: '',
-        sent: false
+        sent: false,
+        buttonText: 'Send Message',
     }
 
     //handle inputs
@@ -61,6 +62,7 @@ class Register extends Component {
         },3000)
     }
     render() {
+        console.log(this.state.sent);
         return (
             <div className="contact" id="contact">
                 <div className="container"><h2 className="text-capitalize"><span>הירשמו עכשיו</span></h2><p>מס' המקומות מוגבל</p></div>
@@ -90,7 +92,9 @@ class Register extends Component {
                                             value={this.state.message}
                                             onChange={this.handleMessage}
                                         ></textarea>
-                                        <div className={this.state.sent ? 'msg msgAppear' : 'msg'}>ההרשמה בוצעה בהצלחה</div>
+
+
+                                           <div className={this.state.sent?'msg msgAppear':'msg'}>Message has been sent</div>
                                         <input type="submit" value="הירשם" className="text-uppercase" />
                                     </form>
                                 </div>

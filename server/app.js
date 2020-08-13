@@ -21,7 +21,7 @@ app.post('/api/forma', (req, res) => {
     service: 'Gmail',
     port: 465,
     auth: {
-      user: 'n.a.hairstyle.course@gmail.com',
+      user: 'coursebarbers@gmail.com',
       pass: 'btuzowfopspmzmxb'
     }
   });
@@ -29,7 +29,7 @@ app.post('/api/forma', (req, res) => {
 
   let mailOptions = {
     form: data.email,
-    to: 'n.a.hairstyle.course@gmail.com',
+    to: 'coursebarbers@gmail.com',
     subject: `Message from ${data.fullName}`,
 
     html: `
@@ -59,7 +59,7 @@ app.post('/api/forma', (req, res) => {
 
 //deployment
 if (process.env.NODE_ENV === "production") {
-  const root = path.join(__dirname, "..", "client", "build");
+  const root = path.join(__dirname, "client", "build");
   app.use(express.static(root));
   app.get("*", (req, res) => {
     res.sendFile("index.html", { root });
