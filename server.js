@@ -48,7 +48,7 @@ app.post('/api/forma', (req, res) => {
   smtpTransport.sendMail(mailOptions, (err, res) => {
     if (err) {
       // res.send(err)
-      console.log(err);
+      console.log(err,'ffhkj');
     }
     else {
       res.send('Success')
