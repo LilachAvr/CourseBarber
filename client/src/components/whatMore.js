@@ -21,7 +21,7 @@ class WhatMore extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-2 col-md-3 col-4"><img src="/imgs/models.jpeg" alt=''/></div>
+                                <div className="col-lg-2 col-md-3 col-4"><img src="/models.jpeg" alt=''/></div>
                                 <div className="col-lg-6 col-8">
                                     <h4 className="text-ippercase">מודליסטים</h4>
                                     <p>אצלינו מתחילים כבר מהמפגש השני לעבוד על מודליסטים ולא על  ראשי בובות כך תרכשו את הניסיון ,והביטחון לעבודה גם ללא ניסיון ,</p>

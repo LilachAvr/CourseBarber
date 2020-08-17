@@ -13,7 +13,7 @@ class Footer extends Component {
 
                 <div className="row">
                     <div>
-                        <a href="index.html" className="logo"><img src="imgs/barberlogo.jpeg" alt="#" /></a>
+                        <a href="index.html" className="logo"><img src="barberlogo.jpeg" alt="#" /></a>
                     </div>
                     <div>
                         <div >

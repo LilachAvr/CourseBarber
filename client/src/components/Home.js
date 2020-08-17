@@ -23,7 +23,7 @@ class Home extends Component {
                         <Carousel.Item >
                             <img
                                 className="d-block w-100"
-                                src="/imgs/logo.png"
+                                src="/logo.png"
                                 alt="First slide"
                             />
 
@@ -31,7 +31,7 @@ class Home extends Component {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="/imgs/84983794-styling-hair-with-combs-and-tools-in-barbershop-on-stone-background-top-view-mock-up.jpg"
+                                src="/84983794-styling-hair-with-combs-and-tools-in-barbershop-on-stone-background-top-view-mock-up.jpg"
                                 alt="Third slide"
                             />
 

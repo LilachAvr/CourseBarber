@@ -13,7 +13,7 @@ class AboutBarbershop extends Component {
                 <h2 className="text-uppercase"><span>קצת עלינו</span></h2>
                 <div className="row">
                     <div className="col-lg-6 col-12">
-                        <div  className="img"><img alt='' src="imgs/theShop.jpeg" /></div>
+                        <div  className="img"><img alt='' src="theShop.jpeg" /></div>
                     </div>
                     <div className="col-lg-6 col-12 text-right">
                         <div className="about-child">
