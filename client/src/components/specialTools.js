@@ -63,7 +63,7 @@ class Tools extends Component {
                                     <div>
                                        <img alt='' src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMtVEzJOadK18ESln3m5cF--WSvpADo9jwkQ&usqp=CAU" />
                                             <div className="yellow-overlay d-flex align-items-center justify-content-center">
-                                                <p>ערכת ציוד משודרגת לספר מקצועי בשווי  <b> 1,800</b> ש"ח</p>
+                                                <p>ערכת ציוד משודרגת לספר מקצועי בשווי  <b> 2,000</b> ש"ח</p>
                                             </div>
                                         
                                     </div>

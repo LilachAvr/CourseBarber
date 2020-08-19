@@ -7,8 +7,7 @@ class Register extends Component {
         phone: '',
         email: '',
         message: '',
-        sent: false,
-        buttonText: 'Send Message',
+        sent: false
     }
 
     //handle inputs
@@ -37,41 +36,46 @@ class Register extends Component {
         }
 
         axios.post('/api/forma', data)
-            .then(res => {
-                this.setState({
-                    sent: true
-                }, this.resetForm())
-            })
-            .catch(() => {
-                console.log('message not sent');
-            })
+        console.log(data);
+            // .then(res => {
+            //     if (res.status === 200) {
+            //       this.setState({ sent: true })
+            //     console.log(res.data);  
+            //     }
+                
+            // })
+            // .catch(() => {
+            //     console.log('message not send');
+
+            // })
+
+
     }
 
     // for reseting initial data
-    resetForm=()=>{
+    resetForm = () => {
         this.setState({
-            fullName:'',
-            phone:'',
-            email:'',
-            message:''
+            name: '',
+            lastname: '',
+            message: '',
+            email: '',
+            sent: true
         })
-        setTimeout(()=>{
-            this.setState({
-                sent:false,
-            })
-        },3000)
+
+
     }
+
     render() {
-        console.log(this.state.sent);
+console.log(this.formSubmit);
         return (
             <div className="contact" id="contact">
-                <div className="container"><h2 className="text-capitalize"><span>הירשמו עכשיו</span></h2><p>מס' המקומות מוגבל</p></div>
+                <div className="container"><h2 className="text-capitalize"><span>הירשמו עכשיו</span></h2><p>***מס' המקומות מוגבל</p></div>
                 <div className="contact-child">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-12">
                                 <div className="contact-form">
-                                    <form onSubmit={this.formSubmit}>
+                                    <form>
                                         <input type="text"
                                             placeholder="שם מלא"
                                             value={this.state.fullName}
@@ -93,10 +97,12 @@ class Register extends Component {
                                             onChange={this.handleMessage}
                                         ></textarea>
 
-
-                                           <div className={this.state.sent?'msg msgAppear':'msg'}>Message has been sent</div>
-                                        <input type="submit" value="הירשם" className="text-uppercase" />
+                                        {this.state.sent ? <div className='msg'>Message has been sent</div> : ''}
+                                        <input type="button" value="הירשם" className="text-uppercase" onClick={this.formSubmit} />
                                     </form>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -110,3 +116,5 @@ class Register extends Component {
 }
 
 export default Register;
+
+
