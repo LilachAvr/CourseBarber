@@ -25,30 +25,34 @@ class Register extends Component {
     }
     //end of handle innputs
 
-    formSubmit = (e) => {
-        e.preventDefault();
+    formSubmit = () => {
+        // e.preventDefault();
 
-        let data = {
+        const data = {
             fullName: this.state.fullName,
             phone: this.state.phone,
             email: this.state.email,
             message: this.state.message
         }
-
+console.log(data);
         axios.post('/api/forma', data)
-        console.log(data);
-            // .then(res => {
-            //     if (res.status === 200) {
-            //       this.setState({ sent: true })
-            //     console.log(res.data);  
-            //     }
-                
-            // })
-            // .catch(() => {
-            //     console.log('message not send');
+            .then(res => {
+                if (res.status === 200) {
+                    console.log('iiii');
+                  this.setState({ sent: true })
+                  console.log(res);
+                }
+                else {
 
-            // })
 
+                    console.log(`error code ${res.status}`)
+                }
+            })
+            .catch((err) => {
+                console.log(err.message);
+
+            })
+console.log('dgbfhdgngsfg');
 
     }
 
@@ -59,14 +63,13 @@ class Register extends Component {
             lastname: '',
             message: '',
             email: '',
-            sent: true
+            sent: false
         })
 
 
     }
 
     render() {
-console.log(this.formSubmit);
         return (
             <div className="contact" id="contact">
                 <div className="container"><h2 className="text-capitalize"><span>הירשמו עכשיו</span></h2><p>***מס' המקומות מוגבל</p></div>
@@ -100,8 +103,6 @@ console.log(this.formSubmit);
                                         {this.state.sent ? <div className='msg'>Message has been sent</div> : ''}
                                         <input type="button" value="הירשם" className="text-uppercase" onClick={this.formSubmit} />
                                     </form>
-
-
 
                                 </div>
                             </div>

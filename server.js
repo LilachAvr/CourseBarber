@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 //   resizeBy.send('welcome to my forma')
 // })
 
-app.post('/api/forma', (req, res) => {
+app.post('/api/forma', (req, resopnse) => {
 
   let data = req.body
   let smtpTransport = nodemailer.createTransport({
@@ -29,7 +29,7 @@ app.post('/api/forma', (req, res) => {
 
 
   let mailOptions = {
-    form: data.email,
+    from: data.email,
     to: 'coursebarbers@gmail.com',
     subject: `Message from ${data.fullName}`,
 
@@ -44,18 +44,34 @@ app.post('/api/forma', (req, res) => {
     <h3>Message</h3>
     <p>${data.message}</p>`
   };
-
-  smtpTransport.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      // res.send(err)
-      console.log(err,'ffhkj');
-    }
-    else {
-      res.send('Success')
+console.log(mailOptions);
+  smtpTransport.sendMail(mailOptions, function (err, res) {
+    //   if (err) {
+    //     // res.send(err)
+    //     console.log('fail');
+    //    return console.log(err,'ffhkj');
+    //   }
+    //   else {
+    //    return res.send('Success')
+    //     // console.log('Success');
+    //   }
+    // },console.log('vvjhv bkb kjk'))
+    console.log(mailOptions);
+    console.log(mailOptions.from);
+    res.envelope.from =mailOptions.from
+    if (res) {
+      console.log(res,'res'); 
+       console.log('-----------------------------------------------------');
+       resopnse.json({
+        message: res,
+        status: 200
+      })
+    } else {
+      console.log(err, 'Error');
     }
   })
-
   smtpTransport.close();
+
 })
 
 //deployment
