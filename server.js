@@ -44,7 +44,7 @@ app.post('/api/forma', (req, resopnse) => {
     <h3>Message</h3>
     <p>${data.message}</p>`
   };
-console.log(mailOptions);
+  console.log(mailOptions);
   smtpTransport.sendMail(mailOptions, function (err, res) {
     //   if (err) {
     //     // res.send(err)
@@ -58,11 +58,12 @@ console.log(mailOptions);
     // },console.log('vvjhv bkb kjk'))
     console.log(mailOptions);
     console.log(mailOptions.from);
-    res.envelope.from =mailOptions.from
+    // res.envelope.from = mailOptions.from
+
     if (res) {
-      console.log(res,'res'); 
-       console.log('-----------------------------------------------------');
-       resopnse.json({
+      console.log(res, 'res');
+      console.log('-----------------------------------------------------');
+      resopnse.json({
         message: res,
         status: 200
       })

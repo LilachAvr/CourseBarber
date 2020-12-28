@@ -1,0 +1,42 @@
+
+.col{
+    background-color: #00000099;
+    margin-right: 1%;
+    margin-top: 1%;
+    padding: 2% 8px;
+    text-align: center;
+    border-radius: 2%;
+    color: white;
+}
+.row-cols-md-4{
+    width: 100%;
+}
+
+.row-cols-md-4>* {
+    flex: 0 0 auto;
+    width: 19%;
+    height: 41vh;
+}
+
+.tools{
+    background: #4a4747;
+    padding: 3% 4% 3% 8%;
+}
+
+img {
+    width: 87%;
+    height: 50%;
+}
+
+@media (max-width:700px){
+    h2.text-capitalize.text-center{
+        text-align: center !important;
+        font-size: larger;
+        margin-top: 25%;
+    }
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 49%;
+        height: 41vh;
+    }
+}

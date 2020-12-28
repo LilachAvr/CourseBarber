@@ -1,23 +1,29 @@
-import React from 'react';
-import Home from './components/Home';
-import AboutBarbershop from './components/aboutBarbershop';
-import AboutCourse from './components/aboutCourse';
-// import Footer from './components/footer';
-import Tools from './components/specialTools';
-import Register from './components/register';
-import WhatMore from './components/whatMore';
+import './App.css';
+import React from 'react'
+import Home from './components/home/home';
+// import AboutBarbershop from './components/aboutBarbershop/aboutBarbershop';
+import AboutCourse from './components/aboutCourse/aboutCourse';
+import SpecialTools from './components/specialTools/specialTools';
+import WhatMore from './components/whatMore/whatMore';
+import Register from './components/register/register';
+import AboutBarbershop from './components/aboutBarbershop/aboutBarbershop';
+// import Footer from './components/footer/footer';
+// import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
-    <div className="barberCourse">
-      <Home/>
-      <AboutBarbershop/>
-      <AboutCourse/>
-      <Tools/>
-      <WhatMore/>
-      <Register/>
-      {/* <Footer/> */}
-    </div>
+    // <div>
+      <div className='App'>
+        <Home/>
+        {/* <AboutBarbershop/> */}
+        <AboutCourse/>
+        <SpecialTools/>
+        <WhatMore/>
+        <AboutBarbershop/>
+        <Register/>
+
+      </div>
+    // </div>
   );
 }
 
