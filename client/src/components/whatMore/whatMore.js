@@ -88,8 +88,8 @@ const WhatMore = () => {
                     <source src="https://player.vimeo.com/external/459186304.sd.mp4?s=f6163a27ebbcc47e9c8c924e13483a7b5eaca7a6&profile_id=164" type="video/mp4" />
 </video> */}
 <video autoPlay muted loop id='myVideo'>
-{/* <source src="https://player.vimeo.com/external/459186304.sd.mp4?s=f6163a27ebbcc47e9c8c924e13483a7b5eaca7a6&profile_id=164" type="video/mp4" /> */}
-     <source src='/nabarber.mp4' type='video/mp4'/>
+<source src="https://player.vimeo.com/external/459186304.sd.mp4?s=f6163a27ebbcc47e9c8c924e13483a7b5eaca7a6&profile_id=164" type="video/mp4" />
+     
       </video>
             </div>
         </section>
