@@ -95,8 +95,8 @@ padding-right: 2%;
     float: left;
 
 }
-@media(max-width:700px){
-    .about{
+@media (max-width: 992px){
+        .about{
         height: 100vh;
     }
     .rightSideDatiles{
