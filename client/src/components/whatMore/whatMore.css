@@ -42,7 +42,7 @@ h4.text{
 
 @media (max-width: 992px){
         .whatMore{
-        height: 100vh;
+        height: 140vh;
     }
     div.container{
         font-size: medium;

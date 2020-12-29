@@ -32,7 +32,7 @@ img {
         h2.text-capitalize.text-center{
         text-align: center !important;
         font-size: larger;
-        margin-top: 25%;
+        margin-top: 10%;
     }
     .row-cols-md-4>* {
         flex: 0 0 auto;
