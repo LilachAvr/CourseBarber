@@ -23,7 +23,7 @@ app.post('/api/forma', (req, resopnse) => {
     port: 465,
     auth: {
       user: 'coursebarbers@gmail.com',
-      pass: 'btuzowfopspmzmxb'
+      pass: 'gozqfrmwgvoabsfr'
     }
   });
 
@@ -46,19 +46,9 @@ app.post('/api/forma', (req, resopnse) => {
   };
   console.log(mailOptions);
   smtpTransport.sendMail(mailOptions, function (err, res) {
-    //   if (err) {
-    //     // res.send(err)
-    //     console.log('fail');
-    //    return console.log(err,'ffhkj');
-    //   }
-    //   else {
-    //    return res.send('Success')
-    //     // console.log('Success');
-    //   }
-    // },console.log('vvjhv bkb kjk'))
+    
     console.log(mailOptions);
     console.log(mailOptions.from);
-    // res.envelope.from = mailOptions.from
 
     if (res) {
       console.log(res, 'res');
