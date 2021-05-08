@@ -3,7 +3,7 @@ import './aboutBarber.css';
 
 const AboutBarbershop = () => {
     return (
-        <section className='aboutUs'>
+        <article className='aboutUs'>
             <div className='aboutme'>
             {/* <div className="about" id="about"> */}
                 <p className='aboutMe'>רגע.. עוד לא עשינו היכרות בכלל</p>
@@ -31,7 +31,7 @@ const AboutBarbershop = () => {
                     </svg>
                 </div> */}
                 </div>
-        </section>
+        </article>
     )
 }
 

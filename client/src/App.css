@@ -1,15 +1,23 @@
 * {
   box-sizing: border-box;
+  text-align: right;
 }
 
 html {
-text-align: right;
+
 }
 
 .App{
-  background-image: url(/barb.jpeg);
+  background: linear-gradient(#181515, #770f0f);
+  text-align-last: center;
+  /* background-image: url(/barb.jpeg);
   background-size: cover;
   background-position: center center;
   height: 70vh;
   text-align: right;
+  z-index: 1111; */
+}
+
+section article{
+  padding-bottom: 120px;
 }

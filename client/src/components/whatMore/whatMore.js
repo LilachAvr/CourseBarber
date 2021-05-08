@@ -11,7 +11,7 @@ import './whatMore.css';
 const WhatMore = () => {
     // const classes = useStyles();
     return (
-        <section className='whatMore'>
+        <article className='whatMore'>
             {/* <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
@@ -40,10 +40,11 @@ const WhatMore = () => {
         </Button>
                 </CardActions>
             </Card> */}
+                                <h2> מה עוד מצפה לכם ...</h2>
+
             <div className='rightSideWhatMore'>
                 <div className="testimonial" id="test">
                     {/* <div className="container"> */}
-                    <h2 className="text-capitalize text-center"> מה עוד מצפה לכם ...</h2>
                     {/* </div> */}
 
                     <div className="test-child">
@@ -92,7 +93,7 @@ const WhatMore = () => {
 
                 </video>
             </div>
-        </section>
+        </article>
     )
 }
 

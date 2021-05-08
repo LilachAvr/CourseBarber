@@ -1,11 +1,12 @@
 .whatMore{
     /* margin-top: 2%; */
-    height: 70vh;
+    height: 75vh;
     direction: rtl;
-    background-color: beige;
+    color: white;
+    /* background-color: beige; */
 }
 div.container{
-    font-size: x-large;
+    font-size: medium;
 }
 .rightSideWhatMore{
     float: right;
@@ -17,15 +18,15 @@ div.container{
     float: left;
     /* background-color: #ae1919; */
 }
-h2{
+/* h2{
     font-size: xxx-large;
     text-shadow: 1px 2px 4px black;
     color: #ae1919;
     /* border-bottom: 2px solid #ae1919; */
-    width: 100%;
+    /* width: 100%;
     margin-bottom: 5%;
     margin-right: 4%;
-}
+} */
 img{
     width: 87%;
 }
@@ -36,13 +37,13 @@ h4.text{
 #myVideo{
     width: 70%;
     /* height: 50vh; */
-    margin: 20% 15%;
+    margin: 40px 15px;
     box-shadow: -20px 20px 15px grey;
 }
 
 @media (max-width: 992px){
         .whatMore{
-        height: 110vh;
+        height: 100vh;
     }
     div.container{
         font-size: medium;
@@ -51,11 +52,15 @@ h4.text{
         width: 100%;
     }
     .leftSideWhatMore {
-        width: 80%;
+        width: 0%;
         height: 0;
     }
-    #myVideo{
-        width: 80%;
-        margin: 0;
-    }
+
+#myVideo {
+    margin: 0;
+    /* width: 27%; */
+    /* height: 0vh; */
+    /* margin: 0; */
+    box-shadow: -12px 12px 6px grey;
+}
 }

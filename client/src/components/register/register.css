@@ -1,20 +1,25 @@
-.contact{
-    background: #efefef;
-    text-align: right;
-    direction: rtl;
+article.register{
+    height: 80vh;
 }
-
-.text-capitalize{
+.contact{
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+}
+.contact h2,h3{
+    direction: rtl;
+    font-size: xx-large;
+}
+/* .text-capitalize{
     font-size: xxx-large;
     text-shadow: 1px 2px 4px black;
     color: #ae1919;
-    /* border-bottom: 2px solid #ae1919; */
     width: 100%;
     margin-bottom: 5%;
-}
+} */
 
 .contact-child{
-    background: white;
+    float: left;
     width: 35%;
     margin-right: 10%;
     padding: 2% 3%;
@@ -29,6 +34,9 @@
       line-height: inherit;
       color: #2e3750;
       min-width: 12em;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid black;
   }
   
   ::placeholder {
@@ -54,21 +62,22 @@
 }
 
 .col-12 {
-    /* -ms-flex: 0 0 100%; */
      flex: 0 0 100%; 
     max-width: 100%;
 }
 
-.contact form input {
-    width: 80%;
+ form input {
+    width: 100%;
     padding: 5px 10px;
     margin-bottom: 15px;
 }
 
-.contact form textarea {
-    width: 80%;
+ form textarea {
+    width: 100%;
     resize: none;
-    height: 100px;
+    height: 75px;
+    background-color: transparent;
+    border: 1px solid black;
     margin-bottom: 15px;
     }
     textarea {
@@ -76,13 +85,17 @@
         resize: vertical;
     }
 
-    button, input, optgroup, select, textarea {
+   input, optgroup, select, textarea {
         margin: 0;
         font-family: inherit;
         font-size: inherit;
         line-height: inherit;
     }
-
+    button{
+        background-color: teal;
+        width: 100%;
+        padding: 10px;
+    }
     .modal {
         display: none;
         position: fixed;
@@ -127,14 +140,31 @@
     }
 
     @media (max-width: 992px){
-        .text-capitalize{
-            font-size: larger;
+        /* .text-capitalize{
+            font-size: medium;
+        } */
+        .contact-child {
+            width: 40%;
+            margin: 0;
+            padding: 2% 3%;
+        }
+        p{text-align: center;}
+        
+    }
+
+    @media (max-width: 370px){
+        /* .text-capitalize{
+            font-size: medium;
+        } */
+        .contact {
+            /* float: right; */
+            font-size: medium;
+            width: 100%;
+            margin-top: 50px;
         }
         .contact-child {
-            background: white;
-            width: 97%;
+            width: 100%;
             margin: 0;
-            /* margin-right: 10%; */
             padding: 2% 3%;
         }
         p{text-align: center;}

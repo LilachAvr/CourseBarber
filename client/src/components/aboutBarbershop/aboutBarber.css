@@ -1,13 +1,13 @@
 .aboutUs{
     background-image: url(/aboutMe.jpg);
     background-size: cover;
-    
-    height: 90vh;
+    padding-bottom: 0;
+    /* height: 90vh; */
     /* padding-top: 3%; */
 }
 .aboutme{
     background-color: rgba(0, 0, 0, 0.5);
-    height: 90vh;
+    /* height: 90vh; */
 }
 .conteinerAboutMe{
     text-align: center;
@@ -23,13 +23,14 @@
     padding-top: 2%;
     color: white;
     text-align: center;
-    font-size: x-large;
+    font-size: medium;
 }
 
 
 @media (max-width: 992px){
         .aboutMe{
         font-size: medium;
+    
     }
     .conteinerAboutMe {
         text-align: center;

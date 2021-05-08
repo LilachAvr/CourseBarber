@@ -58,7 +58,7 @@ padding-right: 2%;
     height: 100%;
     background-color: hotpink;
 } */ 
-.about{
+/* .about{
     height: 85vh;
     background-color: beige;
 
@@ -71,7 +71,6 @@ padding-right: 2%;
 }
 
 .leftSidePhoto{
-    /* float: left; */
     width: 49%;
 }
 
@@ -79,7 +78,6 @@ padding-right: 2%;
     font-size: xxx-large;
     text-shadow: 1px 2px 4px black;
     color: #ae1919;
-    /* border-bottom: 2px solid #ae1919; */
     width: 100%;
 }
 .row{
@@ -88,7 +86,6 @@ padding-right: 2%;
 
 .photoCourse{
     width: 40%;
-    /* -webkit-box-shadow: 10px 10px 5px grey; */
     box-shadow: -20px 20px 15px grey;
     margin-left: 20%;
     margin-top: 8%;
@@ -118,5 +115,46 @@ padding-right: 2%;
     .photoCourse{
         margin: 2% 39%;
     box-shadow: -10px 10px 11px grey;
+    }
+} */
+
+article.about{
+    color: white;
+    direction: rtl;
+    text-align-last: center;
+}
+
+ h2{
+    
+    color: #ae1919;
+    text-shadow: -2px 2px 0px #252525;;
+
+} 
+
+@media (max-width: 994px){
+
+    .about .aboutCourse{
+       padding: 20px; 
+    }
+    h2{
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 370px){
+    
+    .about .aboutCourse{
+       padding: 20px; 
+    }
+    h2{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: medium;
     }
 }

@@ -11,10 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 app.use(express.static(__dirname + '/public'));
 
-// app.get('/', () => {
-//   resizeBy.send('welcome to my forma')
-// })
-
 app.post('/api/forma', (req, resopnse) => {
 
   let data = req.body

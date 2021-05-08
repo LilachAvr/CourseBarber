@@ -70,79 +70,82 @@ class Register extends Component {
     }
 
     render() {
-        let registerClose = () =>{
+        let registerClose = () => {
             this.setState({ registerShow: false });
-           this.resetForm();
-        } 
+            this.resetForm();
+        }
 
         return (
-            <div className="contact" id="contact">
-                {/* <div className="container"> */}
-                    <h2 className="text-capitalize">
-                        {/* <span>הירשמו עכשיו</span> */}
-                        <span>לקבלת פרטים נוספים</span>
-                    </h2>
+            <article className='register'>
+                {/* <div className="contact" id="contact"> */}
+                    {/* <div className="container"> */}
+                    <div className='contact'>
+                        <h2>אז למה אתם מחכים...</h2>
+                                   <h3>לקבלת פרטים נוספים  </h3>
 
                     <p>***מס' המקומות מוגבל</p>
-                {/* </div> */}
-                <div className="contact-child">
-                    <div className="formregister">
-                        <div className="row">
-                            <div className="col-lg-6 col-12">
-                                <div className="contact-form">
-                                    <form>
-                                        <input type="text"
-                                            placeholder="שם מלא"
-                                            value={this.state.fullName}
-                                            onChange={this.handleFullName}
-                                            required
-                                        />
-                                        <input type="text"
-                                            placeholder="מס' טלפון"
-                                            value={this.state.phone}
-                                            onChange={this.handlePhone}
-                                            required
-                                        />
-                                        <input type="text"
-                                            placeholder="אימייל"
-                                            value={this.state.email}
-                                            onChange={this.handleEmail}
+                    </div>
+                
+                    {/* </div> */}
+                    <div className="contact-child">
+                        <div className="formregister">
+                            <div className="row">
+                                <div className="col-lg-6 col-12">
+                                    <div className="contact-form">
+                                        <form>
+                                            <input type="text"
+                                                placeholder="שם מלא"
+                                                value={this.state.fullName}
+                                                onChange={this.handleFullName}
+                                                required
+                                            />
+                                            <input type="text"
+                                                placeholder="מס' טלפון"
+                                                value={this.state.phone}
+                                                onChange={this.handlePhone}
+                                                required
+                                            />
+                                            <input type="text"
+                                                placeholder="אימייל"
+                                                value={this.state.email}
+                                                onChange={this.handleEmail}
 
-                                            required="Enter your e-mail"
+                                                required="Enter your e-mail"
 
-                                            // value='/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i'
-                                            message="Enter a valid e-mail address"
+                                                // value='/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i'
+                                                message="Enter a valid e-mail address"
 
-                                        />
-                                        <textarea placeholder="Message"
-                                            value={this.state.message}
-                                            onChange={this.handleMessage}
-                                        ></textarea>
+                                            />
+                                            <textarea placeholder="הודעה"
+                                                value={this.state.message}
+                                                onChange={this.handleMessage}
+                                            ></textarea>
 
-                                        {this.state.sent ? <div className='msg'>Message has been sent</div> : ''}
-                                        {/* <i class="glyphicon-thumbs-up"></i> */}
-                                  
-                                        <ButtonToolbar>
-                                             <input type="button" value="הירשם" className="button" onClick={this.formSubmit} />
-                                            {/* <button className='btnTypeManager' onClick={() => {
+                                            {this.state.sent ? <div className='msg'>Message has been sent</div> : ''}
+                                            {/* <i class="glyphicon-thumbs-up"></i> */}
+
+                                            <ButtonToolbar>
+                                                <button type="button" value="הירשם" className="button" onClick={this.formSubmit} >הירשם</button>
+                                                {/* <button className='btnTypeManager' onClick={() => {
                                                
                                             }}>הירשם</button> */}
-                                            <PopupExmp
-                                                show={this.state.registerShow}
-                                                onHide={registerClose}
-                                            />
-                                        </ButtonToolbar>
-                                    </form>
+                                                <PopupExmp
+                                                    show={this.state.registerShow}
+                                                    onHide={registerClose}
+                                                />
+                                            </ButtonToolbar>
+                                        </form>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                </div>
 
-
-            </div >
+                {/* </div > */}
+            </article>
         );
     }
 }

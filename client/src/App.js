@@ -7,22 +7,24 @@ import SpecialTools from './components/specialTools/specialTools';
 import WhatMore from './components/whatMore/whatMore';
 import Register from './components/register/register';
 import AboutBarbershop from './components/aboutBarbershop/aboutBarbershop';
+import About from './components/aboutCourse/about';
 // import Footer from './components/footer/footer';
 // import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
     // <div>
-      <div className='App'>
+      <section className='App'>
         <Home/>
         {/* <AboutBarbershop/> */}
-        <AboutCourse/>
+        {/* <AboutCourse/> */}
+        <About/>
         <SpecialTools/>
         <WhatMore/>
         <AboutBarbershop/>
         <Register/>
 
-      </div>
+      </section>
     // </div>
   );
 }
