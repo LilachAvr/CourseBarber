@@ -145,7 +145,7 @@ h3{
     padding-top: 150px;
   }
 }
-@media (max-width: 370px){
+@media (max-width: 380px){
   .home .homePage h1{
     font-size: 70px;
   }
