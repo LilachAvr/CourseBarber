@@ -145,7 +145,7 @@ article.about{
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 450px){
     
     .about .aboutCourse{
        padding: 20px; 
